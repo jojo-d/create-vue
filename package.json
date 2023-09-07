@@ -1,10 +1,10 @@
 {
-  "name": "create-vue",
-  "version": "3.7.3",
-  "description": "An easy way to start a Vue project",
+  "name": "create-vue-mib",
+  "version": "1.0.0",
+  "description": "A scaffold of vue3 forked create-vue",
   "type": "module",
   "bin": {
-    "create-vue": "outfile.cjs"
+    "create-vue-mib": "outfile.cjs"
   },
   "files": [
     "outfile.cjs",
