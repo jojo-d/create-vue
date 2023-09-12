@@ -27,7 +27,7 @@ SOFTWARE.
 ## Licenses of bundled dependencies
 
 The published create-vue artifact additionally contains code with the following licenses:
-MIT, Apache-2.0
+MIT, Apache-2.0, UNLICENSED
 
 ## Bundled dependencies
 
@@ -268,6 +268,14 @@ Repository: git://github.com/mde/ejs.git
 >    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 >    See the License for the specific language governing permissions and
 >    limitations under the License.
+>
+
+## eslint-vue3
+
+License: UNLICENSED
+By: Jojo
+Repository: git@git.n.xiaomi.com:fe-specification/eslint-vue3.git
+
 >
 
 ## javascript-stringify
