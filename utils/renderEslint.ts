@@ -15,58 +15,7 @@ export default function renderEslint(
   rootDir,
   { needsTypeScript, needsCypress, needsCypressCT, needsPrettier }
 ) {
-  const additionalConfig: Linter.Config = {
-    root: true,
-    env: {
-      es6: true,
-      browser: true,
-      node: true
-    },
-    plugins: ['prettier', 'vue'],
-    extends: [
-      'eslint:recommended',
-      'plugin:prettier/recommended',
-      'plugin:vue/vue3-essential',
-      '@vue/prettier'
-    ],
-    globals: {
-      page: true,
-      APP_ENV: true,
-      PUBLIC_PATH: true
-    },
-    rules: {
-      'prettier/prettier': [
-        'error',
-        {
-          singleQuote: true,
-          jsxSingleQuote: false
-        }
-      ],
-      // Possible Problems：可能引起执行错误的检测
-      'array-callback-return': 'error', // 在数组方法的回调中强制添加return
-
-      // Suggestions
-      complexity: [
-        'error',
-        {
-          max: 15 // 逻辑圈层复杂度，最多15层
-        }
-      ],
-      'default-case': 'error', // 要求switch中必须有default case
-      'default-case-last': 'error', // default case必须在最后
-      eqeqeq: 'error', // === !==
-      'max-depth': ['error', 5], // 嵌套深度，不能超过5层
-      'max-lines': [
-        // 但文件最大行数
-        'error',
-        { max: 500, skipBlankLines: true, skipComments: true }
-      ],
-      'new-cap': 'error', // 要求构造函数名称以大写字母开头
-      'no-alert': 'error',
-      'no-console': 'error',
-      'no-undef-init': 'error' // 禁止初始化值为undefined
-    }
-  }
+  const additionalConfig: Linter.Config = {}
   const additionalDependencies = {}
 
   if (needsCypress) {
