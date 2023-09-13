@@ -15,8 +15,7 @@ export default function renderEslint(
   rootDir,
   { needsTypeScript, needsCypress, needsCypressCT, needsPrettier }
 ) {
-  const additionalConfig: Linter.Config = {}
-  const additionalDependencies = {
+  const additionalConfig: Linter.Config = {
     root: true,
     env: {
       es6: true,
@@ -68,6 +67,7 @@ export default function renderEslint(
       'no-undef-init': 'error' // 禁止初始化值为undefined
     }
   }
+  const additionalDependencies = {}
 
   if (needsCypress) {
     additionalConfig.overrides = [
