@@ -1,6 +1,6 @@
 {
   "name": "create-vue-mib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A scaffold of vue3 forked create-vue",
   "type": "module",
   "bin": {
